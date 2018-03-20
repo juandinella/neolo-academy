@@ -1,0 +1,86 @@
+.main {
+  padding-top: rem(42);
+
+  header {
+    text-align: center;
+
+    h1 {
+      margin-bottom: rem(10);
+    }
+
+    h5 {
+      font-weight: 600;
+      font-size: rem(18);
+      line-height: 1.66;
+    }
+  }
+
+  section {
+    margin-top: rem(68);
+  }
+}
+
+.block {
+  position: relative;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.10);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: rem(10) solid $blue;
+  text-align: center;
+  height: rem(200);
+
+  &--left {
+    position: relative;
+    min-width: rem(160);
+    border-right: 1px solid rgba($main-color, 0.2);
+    color: $main-color;
+  }
+
+  &--center {
+    width: rem(700);
+    text-align: left;
+    padding-top: rem(18);
+
+    h2 {
+      font-size: rem(26);
+    }
+  }
+
+  &-right {
+    width: rem(220);
+  }
+
+  &--date {
+    padding-top: rem(30);
+
+    &__num {
+      font-size: rem(40);
+      font-weight: 700;
+    }
+  }
+
+  &--place {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: rem(10);
+
+    span {
+      text-transform: uppercase;
+      font-size: rem(14);
+      font-weight: 700;
+    }
+  }
+
+  &--tag {
+    display: table;
+    color: $white;
+    background-color: $blue;
+    font-size: rem(14);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: rem(5);
+    padding: rem(2) rem(10);
+  }
+}

@@ -1,0 +1,13 @@
+$system-fonts: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$font: 'Open Sans', sans-serif;
+
+// Breakpoints
+$breakpoints: (
+  xs: 20em,
+  sm: 30em,
+  md: 64em,
+  lg: 81em,
+) !default;
+
+$columns: 12;
+$column-gutter: 30px;

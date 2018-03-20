@@ -1,0 +1,31 @@
+@include flexGrid;
+
+*, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  font-family: $system-fonts;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.wf-active {
+    font-family: $font;
+  }
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+  font: inherit;
+  line-height: inherit;
+}
+
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}

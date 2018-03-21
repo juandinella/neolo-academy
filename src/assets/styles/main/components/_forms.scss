@@ -1,0 +1,26 @@
+input {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  outline: 0 none;
+  border: 0 none;
+  border-bottom: rem(2) solid $main-color;
+  padding: rem(5);
+  color: $main-color;
+  font-size: rem(14);
+  font-weight: 600;
+  margin-bottom: rem(20);
+}
+
+::-webkit-input-placeholder {
+  color: $main-color;
+}
+::-moz-placeholder {
+  color: $main-color;
+}
+:-ms-input-placeholder {
+  color: $main-color;
+}
+:-moz-placeholder {
+  color: $main-color;
+}

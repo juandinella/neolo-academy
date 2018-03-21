@@ -1,0 +1,78 @@
+.hero {
+  &--desktop {
+    display: none;
+    background: url('../images/hero.jpg') center center;
+    background-size: cover;
+    height: rem(640);
+
+    @include breakpoint(md) {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    display: block;
+    background-color: #4C4C4C;
+    padding: rem(14) 0;
+
+    @include breakpoint(md) {
+      display: none;
+    }
+  }
+
+  &--logo {
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+
+    @include breakpoint(md) {
+      padding-top: rem(40);
+      margin-left: rem(135);
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: rem(150);
+
+      @include breakpoint(md) {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &--form {
+    background-color: rgba($white, 0.66);
+    width: rem(444);
+    margin-top: rem(90);
+    margin-left: rem(20);
+    text-align: center;
+    padding: rem(20) rem(45);
+    border-radius: rem(4);
+
+    h2 {
+      color: $main-color;
+      font-size: rem(28);
+      font-weight: 600;
+      margin-bottom: rem(10);
+    }
+
+    p {
+      font-size: rem(14);
+      line-height: 1.35;
+      color: $main-color;
+    }
+
+    form {
+      width: rem(300);
+      margin: rem(30) auto 0 auto;
+    }
+
+
+
+    .btn {
+      margin-top: rem(10);
+    }
+  }
+}

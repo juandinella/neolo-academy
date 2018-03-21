@@ -1,0 +1,206 @@
+.block {
+  position: relative;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,0.10);
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  height: auto;
+  margin-bottom: rem(38);
+  padding-bottom: rem(22);
+  border-top: rem(8) solid;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+    height: rem(200);
+    padding-bottom: 0;
+    border-top: rem(10) solid;
+  }
+
+  &--left {
+    position: relative;
+    min-width: rem(160);
+    border-bottom: 1px solid rgba($main-color, 0.2);
+    border-right: 0 none;
+    color: $main-color;
+    padding-bottom: rem(10);
+
+    @include breakpoint(md) {
+      border-right: 1px solid rgba($main-color, 0.2);
+      padding-bottom: 0;
+    }
+  }
+
+  &--center {
+    text-align: left;
+    padding: rem(10);
+
+    @include breakpoint(md) {
+      padding: rem(18) rem(50) 0 rem(24);
+    }
+
+    h2 {
+      font-size: rem(24);
+      margin-top: rem(5);
+
+      @include breakpoint(md) {
+        margin-top: rem(14);
+        font-size: rem(26);
+      }
+    }
+  }
+
+  &--right {
+    min-width: rem(220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: rem(28);
+  }
+
+  &--date {
+    padding-top: 0;
+    float: left;
+    padding-left: rem(8);
+
+    @include breakpoint(md) {
+      padding-top: rem(30);
+      float: none;
+      padding-left: 0;
+    }
+
+    &__mobile {
+      float: right;
+      margin-top: rem(12);
+      margin-right: rem(12);
+      text-align: center;
+
+      @include breakpoint(md) {
+        margin: 0;
+        text-align: right;
+      }
+    }
+
+    &__num {
+      font-size: rem(40);
+      font-weight: 700;
+    }
+  }
+
+  &--place {
+    position: static;
+    margin-bottom: rem(10);
+    text-align: right;
+
+    @include breakpoint(md) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: rem(10);
+      margin: 0;
+      text-align: center;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: rem(14);
+      font-weight: 700;
+    }
+  }
+
+  &--tag {
+    display: table;
+    color: $white;
+    font-size: rem(14);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: rem(5);
+    padding: rem(2) rem(10);
+  }
+
+  &__webinar {
+    border-color: $blue;
+
+    .block--tag {
+      background-color: $blue;
+    }
+
+    .block--date {
+      &__num {
+        color: $blue;
+      }
+    }
+
+    .btn {
+      background-color: $blue;
+
+      &:hover {
+        background-color: darken($blue, 10%);
+      }
+    }
+  }
+
+  &__taller {
+    border-color: $green;
+
+    .block--tag {
+      background-color: $green;
+    }
+
+    .block--date {
+      &__num {
+        color: $green;
+      }
+    }
+
+    .btn {
+      background-color: $green;
+
+      &:hover {
+        background-color: darken($green, 10%);
+      }
+    }
+  }
+
+  &__conferencia {
+    border-color: $yellow;
+
+    .block--tag {
+      background-color: $yellow;
+    }
+
+    .block--date {
+      &__num {
+        color: $yellow;
+      }
+    }
+
+    .btn {
+      background-color: $yellow;
+
+      &:hover {
+        background-color: darken($yellow, 10%);
+      }
+    }
+  }
+}
+
+
+.tag--desktop {
+  display: none;
+
+  @include breakpoint(md) {
+    display: table;
+  }
+}
+
+
+.tag--mobile {
+  display: block;
+
+  @include breakpoint(md) {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+.talleres-pasados {
+  margin-top: rem(68);
+
+  h3 {
+    font-size: rem(26);
+    color: $main-color;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: rem(2) solid $main-color;
+    line-height: 0.1em;
+    margin: rem(10) auto rem(80) auto;
+
+    @include breakpoint(md) {
+      font-size: rem(48);
+      border-bottom: rem(4) solid $main-color;
+      margin: rem(10) auto rem(100) auto;
+    }
+
+    span {
+      background: $white;
+      padding: 0 rem(10);
+    }
+  }
+
+  .block--small {
+    display: block;
+    padding: rem(20);
+    height: auto;
+
+    @include breakpoint(md) {
+      height: rem(250);
+    }
+
+    h2 {
+      font-size: rem(24);
+      text-align: left;
+      font-weight: 600;
+      margin-top: rem(18);
+      margin-bottom: rem(45);
+    }
+  }
+}

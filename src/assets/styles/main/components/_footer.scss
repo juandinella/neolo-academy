@@ -1,0 +1,45 @@
+.mainFooter {
+  margin-top: rem(50);
+
+  &--main {
+    background-color: #4C4C4C;
+    padding: rem(20) 0;
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: right;
+      margin-top: rem(6);
+
+      li {
+        margin-left: rem(25);
+
+        svg path {
+          transition: all 0.225s ease;
+        }
+      }
+
+      .tw {
+        &:hover {
+          svg path{
+            fill: #059ff5;
+          }
+        }
+      }
+
+      .fb {
+        &:hover {
+          svg path {
+            fill: #3b5998;
+          }
+        }
+      }
+    }
+  }
+
+  &--second {
+    padding: rem(20) 0;
+    text-align: center;
+  }
+}

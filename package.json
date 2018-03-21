@@ -27,10 +27,8 @@
     "eslint-loader": "^2.0.0",
     "fs-path": "^0.0.24",
     "gulp": "^4.0.0",
-    "gulp-zip": "^4.1.0",
     "npm": "^5.7.1",
-    "uglifyjs-webpack-plugin": "^1.2.0",
-    "webfontloader": "^1.6.28",
+    "uglfontloader": "^1.6.28",
     "webpack": "^4.0.1",
     "yargs": "^11.0.0"
   },

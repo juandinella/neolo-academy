@@ -1,0 +1,54 @@
+button {
+  cursor: pointer;
+  outline: 0 none;
+  border: 0 none;
+}
+
+.btn {
+  color: $white;
+  font-size: rem(20);
+  font-weight: 700;
+  padding: rem(10) rem(20);
+  border-radius: rem(22);
+  transition: all 0.225s ease;
+  display: inline-block;
+
+  &--blue {
+    background-color: $blue;
+
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+
+  &--green {
+    background-color: $green;
+
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  &--yellow {
+    background-color: $yellow;
+
+    &:hover {
+      background-color: darken($yellow, 10%);
+    }
+  }
+
+  &--orange {
+    background-color: $orange;
+    padding-left: rem(30);
+    padding-right: rem(30);
+
+    &:hover {
+      background-color: darken($orange, 10%);
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $orange;
+  }
+}
